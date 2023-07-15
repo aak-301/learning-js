@@ -48,3 +48,15 @@ That is why JS is transpiled and polyfilled,i.e., the current Js code is convert
 
 const keyword only works with the primitive value and we cannot mutate those values.
 but arrays is not a primitive so its element can be changed
+
+
+** What is DOM (Document Object Model)
+
+DOM is a structured representation of HTML Documnets. It allow Javascript to access HTML elements and styles to maipulate them
+
+``` document.querySelector(".check").addEventListener("click", function () {
+  console.log(document.querySelector(".guess").value);
+}); ```
+
+Here the call back function is registered by Js engine.
+It is only called when the event( here click) happens.
