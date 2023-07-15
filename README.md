@@ -49,16 +49,37 @@ That is why JS is transpiled and polyfilled,i.e., the current Js code is convert
 const keyword only works with the primitive value and we cannot mutate those values.
 but arrays is not a primitive so its element can be changed
 
-
-** What is DOM (Document Object Model)
+\*\* What is DOM (Document Object Model)
 
 DOM is a structured representation of HTML Documnets. It allow Javascript to access HTML elements and styles to maipulate them
 
-``` 
+```
 document.querySelector(".check").addEventListener("click", function () {
   console.log(document.querySelector(".guess").value);
-}); 
+});
 ```
 
 Here the call back function is registered by Js engine.
 It is only called when the event( here click) happens.
+
+How to select and remove class in html using JS:
+
+1. Select the class using $querySelector (let's say selectedClass).
+2. if you have a lot of elements with same classNam then chain this function (selectedClass.classList).
+3. Then call add or remove the class added in that same html tag (selectedClass.classList.add('overlay')), without usig any period for that class inside add/ remove funcion.
+
+Listening keyboard event:
+
+```
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+```
+
+keydown-when key is pressed
+keyup- when you leve the pressed key
+keypress-when you continuously pressed the key.
+
+In order to get the deails of key pressed in keyboard we pass event parameter in callback function of addEventListener. The evet.key will tell the key pressed.
