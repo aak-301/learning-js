@@ -11,5 +11,8 @@
 // document.querySelector(".guess").value = 30;
 
 document.querySelector(".check").addEventListener("click", function () {
-  console.log(document.querySelector(".guess").value);
+  const guess = Number(document.querySelector(".guess").value);
+  if (!guess) {
+    document.querySelector(".message").textContent = "No Numbr";
+  }
 });

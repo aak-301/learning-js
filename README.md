@@ -54,9 +54,11 @@ but arrays is not a primitive so its element can be changed
 
 DOM is a structured representation of HTML Documnets. It allow Javascript to access HTML elements and styles to maipulate them
 
-``` document.querySelector(".check").addEventListener("click", function () {
+``` 
+document.querySelector(".check").addEventListener("click", function () {
   console.log(document.querySelector(".guess").value);
-}); ```
+}); 
+```
 
 Here the call back function is registered by Js engine.
 It is only called when the event( here click) happens.
