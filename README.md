@@ -83,3 +83,43 @@ keyup- when you leve the pressed key
 keypress-when you continuously pressed the key.
 
 In order to get the deails of key pressed in keyboard we pass event parameter in callback function of addEventListener. The evet.key will tell the key pressed.
+
+Properties ofJavascript:
+
+1. High Level
+2. Garbage-collected
+3. Interpreted or just-in-time compiled
+4. Multi-paradig
+5. Prtotype-base object-oriented
+6. First-class Function
+7. Dynamic
+8. Single threaded
+9. Non-blocking event loop
+
+What is javascript enhgine ?
+
+It is a computer program which executes the JS code. e.g.:- chrome V8 engine
+
+A Js engine contains two parts :-
+
+1. call stack - here our code is executed using execution context
+2. heap- It is a unstructured memory pool which store all the objects that our application needs.
+
+Earlier JS was interpreted language but , the modern JS uses Just-in-time Compilation, which is a mixture of compilation and interpretation.
+In this compilation:
+
+```
+Source Code --(Compilation)---> Machine Code ---(Execution)--> Program Running
+```
+
+Execution Context has three main parts:
+
+1. Variable environment
+2. Scope Chain
+3. this keyword
+
+Scope are of three type:
+
+1. Global scope
+2. Function Scope
+3. Block scope(ES6)- let & const
