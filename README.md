@@ -123,3 +123,10 @@ Scope are of three type:
 1. Global scope
 2. Function Scope
 3. Block scope(ES6)- let & const
+
+Hoisting
+
+Hoisting makes some of the variables accessible/usabelin the code before they are actually declared, "Variables lifed to the top of their scope"
+
+Behind the scene :
+Before execution, code is scanned for vaiable declarations, and for each variable, a new property is created in the variable env. object. 
